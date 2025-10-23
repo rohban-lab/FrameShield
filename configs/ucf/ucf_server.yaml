@@ -1,0 +1,21 @@
+DATA:
+    ROOT: '../UCF/'
+    TRAIN_FILE: 'configs/ucf/UCF_train.txt'
+    VAL_FILE: 'configs/ucf/UCF_test.txt'
+    DATASET: ucf
+    NUM_CLIPS: 16
+    NUM_FRAMES: 5
+    FRAME_INTERVAL: 6
+    NUM_CLASSES: 2
+    LABEL_LIST: 'configs/ucf/ucf_2_labels.csv'
+    FILENAME_TMPL: '{:05}.jpg'
+MODEL:
+    ARCH: ViT-B/32
+    FIX_TEXT: True
+TRAIN:
+    BATCH_SIZE: 1
+    ACCUMULATION_STEPS: 8
+    AUTO_RESUME: False
+ADV_TRAIN:
+    PSEUDO_ANOMALY: False
+
