@@ -2,10 +2,11 @@
 
 ![Version](https://img.shields.io/badge/Python-3.10-159B17)
 ![License](https://img.shields.io/badge/License-MIT-purple)
+[![arXiv](https://badgen.net/badge/📚/arXiv/8D1B13?style=flat-square)](https://arxiv.org/abs/2510.21532)
+[![OpenReview](https://badgen.net/badge/🧾/OpenReview/8D1B13?style=flat-square)](https://openreview.net/forum?id=7FLKzOqsKd)
 
 > **NeurIPS 2025** \
-> *Mojtaba Nafez, Mobina Poulaei\*, Nikan Vasei\*, Bardia soltani moakhar, Mohammad Sabokrou, Mohammad Hossein Rohban* \
-> Paper: [OpenReview](https://openreview.net/forum?id=7FLKzOqsKd)
+> *Mojtaba Nafez, Mobina Poulaei\*, Nikan Vasei\*, Bardia soltani moakhar, Mohammad Sabokrou, Mohammad Hossein Rohban*
 
 ![FrameShield](FrameShield.jpg)
 
@@ -76,7 +77,7 @@ FrameShield supports multiple benchmark datasets used in the paper:
 | **TAD**    | [Train+Test (Kaggle)](https://www.kaggle.com/datasets/nikanvasei/traffic-anomaly-dataset-tad)        | Official [repository](https://github.com/ktr-hubrt/WSAL?tab=readme-ov-file)             |
 | **UCF Crime**  | [Official Website](https://www.crcv.ucf.edu/projects/real-world/) | Preprocessed for FrameShield                  |
 | **MSAD**  | [Project Website](https://msad-dataset.github.io/) | Apply for the dataset directly on their website.                 |
-| **UCSD-Ped2**  | [TBD]() | Official [paper](https://www.researchgate.net/publication/221362278_Anomaly_Detection_in_Crowded_Scenes)                  |
+| **UCSD-Ped2**  | TBD | Official [paper](https://www.researchgate.net/publication/221362278_Anomaly_Detection_in_Crowded_Scenes)                  |
 
 ### How to use the datasets
 Each dataset should be placed under a root directory, which is specified in your `config` file. 
@@ -103,7 +104,7 @@ See example configs in [`configs/`](configs/).
 | -------------------- | ------------ | -------------------------------------------- | --- |
 | Backbone | Kinetics-400  | [Google Drive](https://drive.google.com/file/d/1zIqA5gLqv0vjlYYcM6MyvHoYEKD93u6x/view?usp=sharing) | Initial weights for the *PromptMIL* stage. |
 | FrameShield (Robust) | ShanghaiTech | [Google Drive](https://drive.google.com/file/d/1vRCEabFo_jPe6CTt0sPaZ8KwE64i7l0C/view?usp=sharing) | Adversarially robust model weights |
-| FrameShield (Robust) | TAD    | [TBD]() | Adversarially robust model weights |
+| FrameShield (Robust) | TAD    | [Google Drive](https://drive.google.com/file/d/1QHwmEcBaWHza5ohA6AYXXTe_ZaDYNFtW/view?usp=sharing) | Adversarially robust model weights |
 
 ### How to use the weights
 You just need to download the weight and specify its path using the `--pretrained PATH` argument.
@@ -230,15 +231,28 @@ ADV_TRAIN:
 
 ## 🧾 Citation
 
-If you find this work useful, please cite:
-
+OpenReview:
 ```bibtex
 @inproceedings{
-anonymous2025frameshield,
-title={FrameShield: Adversarially Robust Video Anomaly Detection},
-author={Anonymous},
-booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
-year={2025},
-url={https://openreview.net/forum?id=7FLKzOqsKd}
+  nafez2025frameshield,
+  title={FrameShield: Adversarially Robust Video Anomaly Detection},
+  author={Mojtaba Nafez and Mobina Poulaei and Nikan Vasei and Bardia soltani moakhar and Mohammad Sabokrou and Mohammad Hossein Rohban},
+  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+  year={2025},
+  url={https://openreview.net/forum?id=7FLKzOqsKd}
+}
+```
+
+arXiv
+```bibtex
+@misc{
+  nafez2025frameshieldadversariallyrobustvideo,
+  title={FrameShield: Adversarially Robust Video Anomaly Detection}, 
+  author={Mojtaba Nafez and Mobina Poulaei and Nikan Vasei and Bardia Soltani Moakhar and Mohammad Sabokrou and MohammadHossein Rohban},
+  year={2025},
+  eprint={2510.21532},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2510.21532}, 
 }
 ```
