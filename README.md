@@ -75,9 +75,9 @@ FrameShield supports multiple benchmark datasets used in the paper:
 | ---------------- | --------------------------------------------------------------------- | --------------------------------------------- |
 | **ShanghaiTech** | [Train (Kaggle)](https://www.kaggle.com/datasets/nikanvasei/shanghaitech-campus-dataset) / [Test (Kaggle)](https://www.kaggle.com/datasets/nikanvasei/shanghaitech-campus-dataset-test)                    | Official *ShanghaiTech University* [website](https://svip-lab.github.io/dataset/campus_dataset.html) |
 | **TAD**    | [Train+Test (Kaggle)](https://www.kaggle.com/datasets/nikanvasei/traffic-anomaly-dataset-tad)        | Official [repository](https://github.com/ktr-hubrt/WSAL?tab=readme-ov-file)             |
-| **UCF Crime**  | [Official Website](https://www.crcv.ucf.edu/projects/real-world/) | Preprocessed for FrameShield                  |
+| **UCF Crime**  | [Project Website](https://www.crcv.ucf.edu/projects/real-world/) | Preprocessed for FrameShield                  |
 | **MSAD**  | [Project Website](https://msad-dataset.github.io/) | Apply for the dataset directly on their website.                 |
-| **UCSD-Ped2**  | TBD | Official [paper](https://www.researchgate.net/publication/221362278_Anomaly_Detection_in_Crowded_Scenes)                  |
+| **UCSD-Ped2**  | [Official Paper](https://www.researchgate.net/publication/221362278_Anomaly_Detection_in_Crowded_Scenes) | Preprocessed for FrameShield                 |
 
 ### How to use the datasets
 Each dataset should be placed under a root directory, which is specified in your `config` file. 
@@ -103,8 +103,8 @@ See example configs in [`configs/`](configs/).
 | Model                | Dataset      | Link                                         | Notes |
 | -------------------- | ------------ | -------------------------------------------- | --- |
 | Backbone | Kinetics-400  | [Google Drive](https://drive.google.com/file/d/1zIqA5gLqv0vjlYYcM6MyvHoYEKD93u6x/view?usp=sharing) | Initial weights for the *PromptMIL* stage. |
-| FrameShield (Robust) | ShanghaiTech | [Google Drive](https://drive.google.com/file/d/1vRCEabFo_jPe6CTt0sPaZ8KwE64i7l0C/view?usp=sharing) | Adversarially robust model weights |
-| FrameShield (Robust) | TAD    | [Google Drive](https://drive.google.com/file/d/1QHwmEcBaWHza5ohA6AYXXTe_ZaDYNFtW/view?usp=sharing) | Adversarially robust model weights |
+<!-- | FrameShield (Robust) | ShanghaiTech | [Google Drive](https://drive.google.com/file/d/1vRCEabFo_jPe6CTt0sPaZ8KwE64i7l0C/view?usp=sharing) | Adversarially robust model weights | -->
+<!-- | FrameShield (Robust) | TAD    | [Google Drive](https://drive.google.com/file/d/1QHwmEcBaWHza5ohA6AYXXTe_ZaDYNFtW/view?usp=sharing) | Adversarially robust model weights | -->
 
 ### How to use the weights
 You just need to download the weight and specify its path using the `--pretrained PATH` argument.
@@ -115,7 +115,7 @@ python ... --pretrained ../weights/k400_16_8.pth
 
 --- 
 
-## 🎬 Demo
+<!-- ## 🎬 Demo
 
 Try the full workflow (data loading, inference, evaluation) in the Kaggle notebook:
 
@@ -128,7 +128,7 @@ The demo includes:
 * Evaluating robustness under adversarial attacks
 * Comparing results
 
----
+--- -->
 
 ## 🧠 Usage
 
